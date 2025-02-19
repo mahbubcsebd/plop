@@ -1,0 +1,17 @@
+const express = require('express');
+const {{name}}Router = express.Router();
+const {
+    getAll{{properCase name}}s,
+    getSingle{{properCase name}},
+    create{{properCase name}},
+    update{{properCase name}},
+    delete{{properCase name}}
+} = require('../controllers/{{name}}Controller');
+
+{{name}}Router.get('/', getAll{{properCase name}}s);
+{{name}}Router.get('/:id', getSingle{{properCase name}});
+{{name}}Router.post('/', create{{properCase name}});
+{{name}}Router.put('/:id', update{{properCase name}});
+{{name}}Router.delete('/:id', delete{{properCase name}});
+
+module.exports = {{name}}Router;

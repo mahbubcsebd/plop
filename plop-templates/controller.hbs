@@ -1,0 +1,34 @@
+const {{name}} = require('../models/{{name}}Model');
+
+// Get All {{name}}s
+const getAll{{properCase name}}s = async (req, res) => {
+res.status(200).json({ message: 'Get all {{name}}s' });
+};
+
+// Get Single {{name}}
+const getSingle{{properCase name}} = async (req, res) => {
+res.status(200).json({ message: 'Get single {{name}}' });
+};
+
+// Create {{name}}
+const create{{properCase name}} = async (req, res) => {
+res.status(201).json({ message: 'Create {{name}}' });
+};
+
+// Update {{name}}
+const update{{properCase name}} = async (req, res) => {
+res.status(200).json({ message: 'Update {{name}}' });
+};
+
+// Delete {{name}}
+const delete{{properCase name}} = async (req, res) => {
+res.status(200).json({ message: 'Delete {{name}}' });
+};
+
+module.exports = {
+getAll{{properCase name}}s,
+getSingle{{properCase name}},
+create{{properCase name}},
+update{{properCase name}},
+delete{{properCase name}},
+};
